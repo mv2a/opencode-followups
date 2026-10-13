@@ -1,0 +1,44 @@
+{
+  "name": "opencode-followups",
+  "author": "mv2a",
+  "version": "0.1.0",
+  "description": "OpenCode v2 TUI plugin: suggests 3-5 next prompts after every assistant turn",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mv2a/opencode-followups.git"
+  },
+  "homepage": "https://github.com/mv2a/opencode-followups#readme",
+  "bugs": {
+    "url": "https://github.com/mv2a/opencode-followups/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "follow-up",
+    "suggestions",
+    "tui"
+  ],
+  "exports": {
+    "./tui": "./tui.ts"
+  },
+  "files": [
+    "tui.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.24"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.27",
+    "@types/bun": "1.2.21",
+    "typescript": "5.9.2"
+  }
+}
